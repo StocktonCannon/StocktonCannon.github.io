@@ -1,0 +1,111 @@
+:root {
+    /* Settings */
+    --font-family-headings:'RocknRoll One', sans-serif;
+    --font-family-body: 'Roboto', sans-serif;
+    --spacing: 15px;
+    --heading-font-size: 2.5vw;
+    --body-font-size: 1.5vw;
+    --min-body-font-size: 10px;
+    --font-size: 1.15rem;
+    /* Normal Colors */
+    --background-color:#00a1b6;
+    --alt-background-color: #B4AAA1;
+    --primary-color: #B0FF92;
+    --alt-primary-color: #9AB63E;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--font-family-body);
+    font-size: 30px;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--primary-color);
+    
+}
+
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color) ;
+    width: auto;
+    height: 120px;
+    margin: 0;
+    border-radius: 0px 50px 0px 50px;
+    border: 3px solid black;
+
+}
+
+#profile-pic {
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: -140px;
+    border: 3px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+}
+
+
+.grow:hover {
+    animation-name: grow;
+    animation-duration: 200s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    z-index: 1;
+}
+
+
+
+@keyframes grow {
+    0% {
+      transform: scale(1);
+      top: 0px;
+    }
+    .5% {
+      transform: scale(1.5);
+      top: 65px;
+    }
+    100% {
+      transform: scale(1);
+      top: 0px;
+    }
+  }
+
+.footer-container {
+    background-color: var(--background-color) ;
+    width: auto;
+    height: 120px;
+    margin: 0;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+.header-name {
+    font-family: var(--font-family-headings);
+    margin: auto;
+}
+
+a {
+    color: rgb(34, 3, 109);
+}
+
+a:hover {
+    color: rgb(117, 221, 224);
+}
