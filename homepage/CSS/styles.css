@@ -29,10 +29,6 @@ body {
 }
 
 
-h1 {
-    font-size: 35px;
-}
-
 h2 {
     font-size: 30px;
     margin-left: 10px;
@@ -100,6 +96,7 @@ h2 {
 .header-name {
     font-family: var(--font-family-headings);
     margin: auto;
+    font-size: 45px;
 }
 
 a {
