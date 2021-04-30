@@ -87,6 +87,15 @@ a {
   padding: 10px;
 }
 
+a:hover {
+  background-color: var(--main-blue);
+  color:var(--sign-up);
+}
+
+section:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.75);
+}
+
 span {
   font-size: 3.5em;
   vertical-align: text-top;
