@@ -1,0 +1,151 @@
+:root {
+    --main-blue: #12AAEB;
+    --body-background: #e7ecf2;
+    --border-bottom: #d1e8fa;
+    --li-font-color: #889196;
+    --sign-up: #d8d8d8;
+    --h2: #12aaeb;
+    --popular-and-pricing: #12aaeb;
+  
+  }
+  
+  
+  @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+  /*UNIVERSAL STYLES*/
+  body {
+    background-color: var(--main-blue);
+  }
+
+  ul {
+    padding: 0;
+    font-size: 15px;
+  }
+
+  h2 {
+    color: var(--h2);
+  }
+  
+  p {
+    color: var(--li-font-color);
+    color: black;
+    list-style-type: none;
+    line-height:2em;
+  }
+
+  .pricing {
+    color: var(--popular-and-pricing);
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  section:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.75);
+  }
+  
+  span {
+    font-size: 3.5em;
+    vertical-align: text-top;
+    font-weight: bold;
+  }
+
+  /*LARGE SCREEN*/
+  @media only screen and (min-width: 1200px) {
+
+  
+  
+  main {
+    margin: 30px 20px 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+  }
+  
+  
+  
+  section {
+    grid-row: 1/3;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px 20px 20px;
+    border-bottom: 5px solid var(--border-bottom);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    /*max-width: 400px;*/
+  }
+  
+  section.smaller, section.right {
+    grid-row: 1;
+  }
+  
+  
+  em {
+    position: relative;
+    top: 0.7em;
+    font-size: 1.7em;
+    font-style: normal;
+  }
+}
+
+    /*MEDIUM SCREEN*/
+    @media only screen and (max-width: 1200px) and (min-width:700px) {
+    
+        main {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 40px;
+            margin: 10px 10px 0 10px;
+          }
+
+          section.bottom {
+            grid-column: 1 / span 2;
+          }
+    
+          img {
+              max-width: 300px;
+              height: auto;
+          }
+    
+          section {
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+            padding: 40px 20px 20px 20px;
+            border-bottom: 5px solid var(--border-bottom);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+          }
+          
+      }
+  
+
+    /*SMALL SCREEN*/
+  @media only screen and (max-width: 700px) {
+    
+    main {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-gap: 40px;
+        margin: 10px 10px 0 10px;
+      }
+
+      img {
+          max-width: 300px;
+          height: auto;
+      }
+
+      section {
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        padding: 40px 20px 20px 20px;
+        border-bottom: 5px solid var(--border-bottom);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      }
+      
+  }
+  
