@@ -1,0 +1,205 @@
+:root {
+    --main-blue: #12AAEB;
+    --body-background: #e7ecf2;
+    --border-bottom: #d1e8fa;
+    --font-color: #889196;
+    --sign-up: #d8d8d8;
+    --blue-background: #bedbe7;
+    --popular-and-pricing: #12aaeb;
+    --logo-and-header-font:Bungee Shade;
+    --nav-font: Bungee;
+  
+  }
+
+html {
+    background-color: var(--blue-background);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-blue);
+    border-bottom: 4px solid black;
+}
+
+#logo-wrapper {
+    margin-left: 20px;
+}
+
+#logo-text {
+    font-family: var(--logo-and-header-font);
+    line-height: 0;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+#logo {
+    margin: 0 0 -20px 20px;
+}
+
+header a {
+    color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    padding: 7.5px;
+    margin-right: 7.5px;
+    font-size: 40px;
+    font-family: var(--nav-font);
+}
+ul.service-info {
+    padding:0;
+}
+
+header a:hover {
+    color: white;
+}
+
+h1 {
+    font-family: var(--logo-and-header-font);
+}
+
+
+
+#services-main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 370px 1fr;
+    grid-template-rows: 475px 3px;
+    grid-gap: 40px;
+    margin: 60px 20px 40px 20px;
+}
+
+section {
+    grid-row: 1/3;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px 20px 20px;
+    border-bottom: 5px solid var(--border-bottom);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    /*max-width: 400px;*/
+  }
+  
+  section.smaller, section.right {
+    grid-row: 1;
+  }
+  
+  #mid-img {
+    margin-top: 25px;
+  }
+  
+  
+  li {
+    color: var(--font-color);
+    list-style-type: none;
+    line-height:2em;
+  }
+  
+  .middle {
+    padding-top: 0px;
+    margin-top: -40px;
+    
+  }
+  
+  #popular {
+    background-color: var(--popular-and-pricing);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+  }
+
+  h2 {
+      font-family: var(--nav-font);
+      font-size: 30px;
+  }
+  
+  .pricing {
+    color: var(--popular-and-pricing);
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  
+  a:hover {
+    background-color: var(--main-blue);
+    color:var(--sign-up);
+  }
+  
+  section:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.75);
+  }
+  
+  span {
+    font-size: 3.5em;
+    vertical-align: text-top;
+    font-weight: bold;
+  }
+  
+  em {
+    position: relative;
+    top: 0.7em;
+    font-size: 1.7em;
+    font-style: normal;
+  }
+
+
+  #color-guide {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    max-width: 1000px;
+}
+
+main div .color-wrapper .color {
+  width: 100%;
+  height: 150px;
+  margin: 0.75rem 0;
+  border: 1px solid black;
+}
+
+#style-heading {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+#color-guide .color-wrapper:nth-of-type(1) .color {
+  background-color: var(--main-blue);
+}
+
+#color-guide .color-wrapper:nth-of-type(2) .color {
+  background-color: var(--body-background);
+}
+
+#color-guide .color-wrapper:nth-of-type(3) .color {
+  background-color: var(--blue-background);
+}
+
+#color-guide .color-wrapper:nth-of-type(4) .color {
+  background-color: var(--font-color);
+}
+  
+  @media only screen and (max-width: 799px) {
+    main {
+      display: block;
+      width: auto;
+    }
+    body {
+      margin: 0;
+      width: auto;
+    }
+  }
+  
