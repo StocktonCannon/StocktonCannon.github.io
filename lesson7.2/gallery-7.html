@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css">
-    <title>Home | Preston</title>
+    <title>Home | Gallery</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="menuitem hidden">
-                <a href="#" class="active">
+                <a href="../lesson6/preston-6.html">
                     Preston
                 </a>
             </li>
@@ -58,49 +58,25 @@
                 </a>
             </li>
             <li class="menuitem hidden">
-                <a href="../lesson7.2/gallery-7.html">
+                <a href="#" class="active">
                     Gallery
                 </a>
             </li>
         </ul>
     </nav>
     <main>
-        <div id="pancakeswrapper">
-            <h4 class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h4>
+        <div class="gallery">
+            <picture class="shadow item1"><img src="images/placeholder.jpg" data-src="images/img1.jpg"></picture>
+            <picture class="shadow item2"><img src="images/placeholder.jpg" data-src="images/img2.jpg"></picture>
+            <picture class="shadow item3"><img src="images/placeholder.jpg" data-src="images/img3.jpg"></picture>
+            <picture class="shadow item4"><img src="images/placeholder.jpg" data-src="images/img4.jpg"></picture>
+            <picture class="shadow item5"><img src="images/placeholder.jpg" data-src="images/img5.jpg"></picture>
+            <picture class="shadow item6"><img src="images/placeholder.jpg" data-src="images/img6.jpg"></picture>
+            <picture class="shadow item7"><img src="images/placeholder.jpg" data-src="images/img7.jpg"></picture>
+            <picture class="shadow item8"><img src="images/placeholder.jpg" data-src="images/img8.jpg"></picture>
+            <picture class="shadow item9"><img src="images/placeholder.jpg" data-src="images/img9.jpg"></picture>
         </div>
-        <h2>Preston Idaho</h2>
-        <div class="container">
-            <!-- <img src="images/wdd230_image_franklinOriginal.jpeg" alt="preston image"> -->
-            <picture>
-                <source media="(min-width:800px)" srcset="images/large.jpeg">
-                <source media="(min-width:500px)" srcset="images/medium.jpeg">
-                <img src="images/small.jpeg" alt="Preston image">
-              </picture>
-            <div class="text-block">
-                <h3>Weather Summary</h3>
-                <p>Currently: Rainy</p>
-                <p>High: <span id="temperature">50</span> °F</p>
-                <p id="new"></p>
-                <p>Humidity: 95%</p>
-                <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
-            </div>
-        </div>
-        <div id="fivedayforecast">
-            <h3>Five Day Forecast</h3>
-            <div id="fivedays">
-                <img src="https://via.placeholder.com/50x50" alt="day-1">
-                <img src="https://via.placeholder.com/50x50" alt="day-2">
-                <img src="https://via.placeholder.com/50x50" alt="day-3">
-                <img src="https://via.placeholder.com/50x50" alt="day-4">
-                <img src="https://via.placeholder.com/50x50" alt="day-5">
-            </div>
-        </div>
-        <div>
-            <h4>Article Title</h4>
-            <p>The article is ans oahs baisb vavs  abs i cbia s hds aswdd </p>
-            <img src="https://via.placeholder.com/300x80" alt="article image">
-        </div>
-        </main>
+    </main>
         <footer>
             <div class="footerwrapper">
                 <div>
@@ -129,9 +105,8 @@
                 <img src="https://via.placeholder.com/300x80" alt="map">
             </div>
         </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/lazyload.js"></script>
+        <script src="js/date.js"></script>
   </body>
-  <script src="js/menu.js"></script>
-  <script src="js/pancakes.js"></script>
-  <script src="js/date.js"></script>
-  <script src="js/windchill.js"></script>
 </html>
