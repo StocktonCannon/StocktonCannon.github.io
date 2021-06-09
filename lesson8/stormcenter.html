@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rocky Mountain Weather">
+    <meta name="keywords" content="Weather, Northwest, Idaho, Utah, Montana, Colorado, Nevade, Wyoming">
+    <meta name="author" content="Stockton Cannon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Preston</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div id="logo-wrapper">
+            <a href="../index.html">
+                <img src="images/RMW-logo.png" id="logo" alt="logo">
+            </a>
+        </div>
+        <div id="headertext">
+            <h1>Rocky Mountain Weather</h1>
+            <p>The knowledge of a brighter tomorrow</p>
+        </div>
+    </header>
+    <nav id="home-menu">
+        <ul>
+            <li>
+                <a id="menubutton" href="#">
+                    Menu
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../index.html">
+                    Home
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#">
+                    Preston
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#">
+                    Soda Springs
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#">
+                    Fish Haven
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#" class="active">
+                    Storm Center
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../lesson7.2/gallery-7.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="form">
+            <fieldset class="personal">
+                <legend>Personal Information</legend>
+                <label>Name:
+                <input name="name" type="text" size="20" placeholder="Enter Full Name">
+                </label>
+            
+                <label>Email:
+                <input name="email" type="email" size="20" placeholder="Enter Email">
+                </label>
+
+                <label>Phone Number:
+                    <input name="phone" type="tel" size="20" placeholder="Enter Phone Number" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="general">
+                <legend>General Information</legend>
+                <label>Zipcode:
+                    <input name="zipcode" type="number" size="5" required>
+                </label>
+
+                <label>Date:
+                    <input name="date" type="date">
+                </label>
+            </fieldset>
+
+            <fieldset class="storm">
+                <legend>Storm Information</legend>
+                <label>Storm Type:
+                    <input name="type" list="browsers">
+                </label>
+
+                <datalist id="browsers">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label for="rating">Storm Severity: 
+                    <input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <label>
+                    <select name="regions" id="selectbrowser">
+                        <option value="" disabled selected>Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda">Soda Sprinds</option>
+                        <option value="Fish-Haven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="danger">
+                <legend>Are you in immediate danger?</legend>
+                <label> Yes
+                    <input type="radio" name="Yes" value="Yes">
+                </label><br>
+
+                <label> Maybe
+                    <input type="radio" name="Maybe" value="Maybe">
+                </label><br>
+
+                <label> No
+                    <input type="radio" name="No" value="No">
+                </label><br>
+            </fieldset>
+
+            <fieldset class="comments">
+                <legend>Comments</legend>
+                <textarea placeholder="Enter any additional comments"></textarea>
+            </fieldset>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footerwrapper">
+            <div>
+                <h5>Contact Information</h5>
+                <div id="email">
+                    <img src="https://via.placeholder.com/20x20" alt="email icon" id="email-icon">
+                    <p>example@email.com</p>
+                </div>
+                <div id="phone">
+                    <img src="https://via.placeholder.com/20x20" alt="phone icon" id="phone-icon">
+                    <p>(***)-***-****</p>
+                </div>
+                <div id="socialmedia">
+                    <a href="https://www.facebook.com/">
+                        <img alt="Facebook" src="https://via.placeholder.com/50x50">
+                    </a>
+                    <a href="https://twitter.com/?lang=en">
+                        <img alt="Twitter" src="https://via.placeholder.com/50x50">
+                    </a>
+                    <a href="">
+                        <img alt="Link" src="https://via.placeholder.com/50x50">
+                    </a>
+                </div>
+                <p id="currdate"></p>
+            </div>
+            <img src="https://via.placeholder.com/300x80" alt="map">
+        </div>
+    </footer>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/rating.js"></script>
+</html>
