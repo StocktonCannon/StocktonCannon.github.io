@@ -67,35 +67,35 @@
     <main>
 
         <div class="form">
-            <fieldset class="personal">
+            <fieldset class="personal flex">
                 <legend>Personal Information</legend>
-                <label>Name:
+                <label>Name:<br>
                 <input name="name" type="text" size="20" placeholder="Enter Full Name">
                 </label>
             
-                <label>Email:
+                <label>Email:<br>
                 <input name="email" type="email" size="20" placeholder="Enter Email">
                 </label>
 
-                <label>Phone Number:
+                <label>Phone Number:<br>
                     <input name="phone" type="tel" size="20" placeholder="Enter Phone Number" required>
                 </label>
             </fieldset>
 
-            <fieldset class="general">
+            <fieldset class="general flex">
                 <legend>General Information</legend>
-                <label>Zipcode:
+                <label>Zipcode:<br>
                     <input name="zipcode" type="number" size="5" required>
                 </label>
 
-                <label>Date:
+                <label>Date:<br>
                     <input name="date" type="date">
                 </label>
             </fieldset>
 
-            <fieldset class="storm">
+            <fieldset class="storm flex">
                 <legend>Storm Information</legend>
-                <label>Storm Type:
+                <label>Storm Type:<br>
                     <input name="type" list="browsers">
                 </label>
 
@@ -107,7 +107,7 @@
                     <option value="Tornado">
                 </datalist>
 
-                <label for="rating">Storm Severity: 
+                <label for="rating">Storm Severity: <br>
                     <input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
@@ -136,7 +136,7 @@
                 </label>
             </fieldset>
 
-            <fieldset class="danger">
+            <fieldset class="danger flex">
                 <legend>Are you in immediate danger?</legend>
                 <label> Yes
                     <input type="radio" name="Yes" value="Yes">
@@ -151,10 +151,12 @@
                 </label><br>
             </fieldset>
 
-            <fieldset class="comments">
+            <fieldset class="comments flex">
                 <legend>Comments</legend>
                 <textarea placeholder="Enter any additional comments"></textarea>
+                <button>Enter</button>
             </fieldset>
+
             
         </div>
         

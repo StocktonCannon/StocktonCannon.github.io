@@ -5,27 +5,59 @@
     --font-color: #889196;
     --sign-up: #d8d8d8;
     --blue-background: #bedbe7;
-    --popular-and-pricing: #12aaeb;
+    
+    --main-gray:#b6c2c7;
     --logo-and-header-font:Bungee Shade;
     --nav-font: Bungee;
   
   }
 
-.form {
-    display: grid;
-        grid-template-areas: 
-        'personal general storm'
-        'danger comments comments';
-        align-items: center;
-        grid-gap: 20px;
 
+
+fieldset.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    font-family: var(--nav-font);
+    width: 50%;
+    margin: 10px 0 0 0;
+    background-color: var(--main-blue);
+}
+
+button:hover {
+    background-color: var(--blue-background);
+}
+
+fieldset {
+    height: 100%;
+    
+    background-color: var(--main-gray);
+    font-family: var(--nav-font);
+    
+}
+
+fieldset input {
+    margin-bottom: 20px;
 }
 
 .personal {grid-area: personal; }
 .general {grid-area: general; }
 .storm {grid-area: storm; }
 .danger {grid-area: danger; }
-.comments {grid-area: comments; }
+
+.comments {
+    grid-area: comments;
+    width: auto;
+}
+
+.comments textarea {
+    width: 90%;
+    height: 90%;
+}
 
 textarea {
     width: 100%;
@@ -191,6 +223,7 @@ line-height:2em;
 
 /*large screen*/
 @media only screen and (min-width: 800px) {
+
     nav {
         background-color: var(--body-background);
         border: 2px solid black;
@@ -302,4 +335,38 @@ line-height:2em;
     }
 }
 
-  
+
+@media only screen and (min-width: 1000px) {
+
+    .form {
+        display: grid;
+            grid-template-areas: 
+            'personal general storm'
+            'danger comments comments';
+            align-items: center;
+            grid-gap: 10px;
+    
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width:999px) {
+
+    .form {
+        display: grid;
+            grid-template-areas: 
+            'personal general'
+            'storm danger'
+            'comments comments';
+            align-items: center;
+            grid-gap: 10px;
+    
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    
+
+}
