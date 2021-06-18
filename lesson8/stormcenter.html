@@ -138,23 +138,28 @@
 
             <fieldset class="danger flex">
                 <legend>Are you in immediate danger?</legend>
-                <label> Yes
-                    <input type="radio" name="Yes" value="Yes">
-                </label><br>
-
-                <label> Maybe
-                    <input type="radio" name="Maybe" value="Maybe">
-                </label><br>
-
-                <label> No
-                    <input type="radio" name="No" value="No">
-                </label><br>
+                <div>
+                    <input type="radio" id="Yes" name="danger" value="Yes"
+                           checked>
+                    <label for="Yes">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="Maybe" name="danger" value="Maybe">
+                    <label for="Maybe">Maybe</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="No" name="danger" value="No">
+                    <label for="No">No</label>
+                  </div>
+                
             </fieldset>
 
             <fieldset class="comments flex">
                 <legend>Comments</legend>
                 <textarea placeholder="Enter any additional comments"></textarea>
-                <button>Enter</button>
+                <input id='submit' type="submit"></input>
             </fieldset>
 
             

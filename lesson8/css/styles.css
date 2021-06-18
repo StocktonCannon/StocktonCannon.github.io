@@ -21,14 +21,14 @@ fieldset.flex {
     justify-content: space-evenly;
 }
 
-button {
+#submit {
     font-family: var(--nav-font);
     width: 50%;
     margin: 10px 0 0 0;
     background-color: var(--main-blue);
 }
 
-button:hover {
+#submit:hover {
     background-color: var(--blue-background);
 }
 
