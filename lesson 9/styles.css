@@ -1,0 +1,31 @@
+.cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightskyblue;
+    margin: 0 10px 10px 10px;
+    border: 2px solid black;
+}
+
+.cards section:hover {
+    background-color: lightsteelblue;
+    box-shadow: 0 0 50px #333;
+}
+
+.cards section img {
+    width: 50%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
