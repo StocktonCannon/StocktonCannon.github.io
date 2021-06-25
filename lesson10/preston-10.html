@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rocky Mountain Weather">
+    <meta name="keywords" content="Weather, Northwest, Idaho, Utah, Montana, Colorado, Nevade, Wyoming">
+    <meta name="author" content="Stockton Cannon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Preston</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div id="logo-wrapper">
+            <a href="../lesson9.2/index.html">
+                <img src="images/RMW-logo.png" id="logo" alt="logo">
+            </a>
+        </div>
+        <div id="headertext">
+            <h1>Rocky Mountain Weather</h1>
+            <p>The knowledge of a brighter tomorrow</p>
+        </div>
+    </header>
+    <nav id="home-menu">
+        <ul>
+            <li>
+                <a id="menubutton">
+                    Menu
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../lesson9.2/index.html">
+                    Home
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../lesson6/preston-6.html" class="active">
+                    Preston
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#">
+                    Soda Springs
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="#">
+                    Fish Haven
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../lesson8/stormcenter.html">
+                    Storm Center
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../lesson7.2/gallery-7.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pancakeswrapper">
+            <h4 class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h4>
+        </div>
+        <h2>Preston Idaho</h2>
+        <div class="container">
+            <!-- <img src="images/wdd230_image_franklinOriginal.jpeg" alt="preston image"> -->
+            <picture>
+                <source media="(min-width:800px)" srcset="images/large.jpeg">
+                <source media="(min-width:500px)" srcset="images/medium.jpeg">
+                <img src="images/small.jpeg" alt="Preston image">
+              </picture>
+            <div class="text-block">
+                <h3>Weather Summary</h3>
+                <p class="inline">Currently: <span id="weatherDescription"></span></p>
+                <img id="icon">
+                <p>High: <span id="highTemp"></span> °F</p>
+                <p>Current: <span id="temp"></span> °F</p>
+                <p><span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </div>
+        </div>
+        <div id="fivedayforecast">
+            <h3>Five Day Forecast</h3>
+            <div id="fivedays">
+                
+                
+            </div>
+        </div>
+        <div>
+            <h4>Article Title</h4>
+            <p>The article is ans oahs baisb vavs  abs i cbia s hds aswdd </p>
+            <img src="https://via.placeholder.com/300x80" alt="article image">
+        </div>
+        </main>
+        <footer>
+            <div class="footerwrapper">
+                <div>
+                    <h5>Contact Information</h5>
+                    <div id="email">
+                        <img src="https://via.placeholder.com/20x20" alt="email icon" id="email-icon">
+                        <p>example@email.com</p>
+                    </div>
+                    <div id="phone">
+                        <img src="https://via.placeholder.com/20x20" alt="phone icon" id="phone-icon">
+                        <p>(***)-***-****</p>
+                    </div>
+                    <div id="socialmedia">
+                        <a href="https://www.facebook.com/">
+                            <img alt="Facebook" src="https://via.placeholder.com/50x50">
+                        </a>
+                        <a href="https://twitter.com/?lang=en">
+                            <img alt="Twitter" src="https://via.placeholder.com/50x50">
+                        </a>
+                        <a href="">
+                            <img alt="Link" src="https://via.placeholder.com/50x50">
+                        </a>
+                    </div>
+                    <p id="currdate"></p>
+                </div>
+                <img src="https://via.placeholder.com/300x80" alt="map">
+            </div>
+        </footer>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/fiveday.js"></script>
+</html>
