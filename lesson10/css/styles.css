@@ -256,7 +256,7 @@ line-height:2em;
       
     .text-block {
         position: absolute;
-        width: 25%;
+        width: 30%;
         bottom: 15%;
         left: 10%;
         background-color: var(--main-blue);
@@ -271,27 +271,6 @@ line-height:2em;
         font-size: 14px;
     }
 
-          
-      @media only screen and (min-width: 900px) { 
-        .text-block {
-            position: absolute;
-            width: 25%;
-            bottom: 25%;
-            left: 10%;
-            background-color: var(--main-blue);
-            opacity: .8;
-            color: black;
-            padding-left: 20px;
-            padding-right: 20px;
-            line-height: normal;
-          }
-
-          .text-block h3 {
-            font-size: 16px;
-        }
-      }
-
-
 
       #fivedays {
           display: flex;
@@ -302,7 +281,7 @@ line-height:2em;
       }
 
       
-    }
+    
 
 
     footer {
@@ -332,6 +311,26 @@ line-height:2em;
     #socialmedia {
         display: flex;
     }
+
 }
+
+@media only screen and (min-width: 900px) { 
+    .text-block {
+        position: absolute;
+        width: 25%;
+        bottom: 25%;
+        left: 10%;
+        background-color: var(--main-blue);
+        opacity: .8;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: normal;
+      }
+
+      .text-block h3 {
+        font-size: 16px;
+    }
+  }
 
   
