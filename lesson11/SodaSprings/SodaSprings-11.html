@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rocky Mountain Weather">
+    <meta name="keywords" content="Weather, Northwest, Idaho, Utah, Montana, Colorado, Nevade, Wyoming">
+    <meta name="author" content="Stockton Cannon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Soda Springs</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div id="logo-wrapper">
+            <a href="../../lesson9.2/index.html">
+                <img src="images/RMW-logo.png" id="logo" alt="logo">
+            </a>
+        </div>
+        <div id="headertext">
+            <h1>Rocky Mountain Weather</h1>
+            <p>The knowledge of a brighter tomorrow</p>
+        </div>
+    </header>
+    <nav id="home-menu">
+        <ul>
+            <li>
+                <a id="menubutton">
+                    Menu
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson9.2/index.html">
+                    Home
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../preston/preston-11.html">
+                    Preston
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../SodaSprings/SodaSprings-11.html" class="active">
+                    Soda Springs
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../FishHaven/FishHaven-11.html">
+                    Fish Haven
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson8/stormcenter.html">
+                    Storm Center
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson7.2/gallery-7.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pancakeswrapper">
+            <h4 class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h4>
+        </div>
+        <h2>Soda Springs Idaho</h2>
+        <div class="container">
+            <!-- <img src="images/wdd230_image_franklinOriginal.jpeg" alt="preston image"> -->
+            <picture>
+                <source media="(min-width:800px)" srcset="images/large.jpeg">
+                <source media="(min-width:500px)" srcset="images/medium.jpeg">
+                <img src="images/small.jpeg" alt="Preston image">
+              </picture>
+            <div class="text-block">
+                <h3>Weather Summary</h3>
+                <p class="inline">Currently: <span id="weatherDescription"></span></p>
+                <img id="icon">
+                <p>High: <span id="highTemp"></span> °F</p>
+                <p>Current: <span id="temp"></span> °F</p>
+                <p><span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </div>
+        </div>
+        <div id="fivedayforecast">
+            <h3>Five Day Forecast</h3>
+            <div id="fivedays">
+                
+                
+            </div>   
+        </div>
+        <div>
+            <h3>Upcoming Events:</h3>
+            <div id="events">
+
+            </div>
+
+        </div>
+        <div>
+            <h4>Curiosity on the Oregon Trail</h4>
+            <div class="article-container">
+                <div>
+                    <p>Located along a shortcut on the Oregon-California Trail off of the main route to Fort Hall,
+                         Idaho is Soda Springs. These natural bubbling pools of carbonated water,
+                          caused by ancient volcanic activity, were first called “Beer Springs”.
+                           Visited by local Indians, fur traders, and trappers prior to the days of the Oregon Trail emigrations,
+                          the springs were rightfully considered to be one of the marvels of the overland trails.
+                    </p>
+                    <p>
+                        At the time that pioneers were headed west for California and Oregon, there was an abundance of springs and water in the area and the area became known as the “Oregon Trail Oasis.”
+                    </p>
+                    <p>
+                        Emigrants frequently took advantage of the hot water to wash clothes, bathing, and medicinal purposes, often noting the picturesque scenery of the area and the smell that came from the springs. On July 24, 1838, Sarah White Smith stated...
+                    </p>
+                    <a href="https://www.legendsofamerica.com/soda-springs-idaho/">read the full article</a>
+                </div>
+                
+                <img src="images/geyser.jpg" alt="Bear River Mountains">
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="footerwrapper">
+                <div class="contactinfowrapper">
+                    <h5>Contact Information</h5>
+                    <div id="email">
+                        <img src="images/emailicon-removebg-preview.png" alt="email icon" id="email-icon">
+                        <p>RockyMountainWeather@email.com</p>
+                    </div>
+                    <div id="phone">
+                        <img src="images/phoneicon-removebg-preview.png" alt="phone icon" id="phone-icon">
+                        <p>(555)-555-5555</p>
+                    </div>
+                    <div id="socialmedia">
+                        <a href="https://www.facebook.com/">
+                            <img alt="Facebook" src="images/facebook-removebg-preview.png">
+                        </a>
+                        <a href="https://twitter.com/?lang=en">
+                            <img alt="Twitter" src="images/twitter-removebg-preview.png">
+                        </a>
+                        <a href="">
+                            <img alt="Link" src="images/whatsapp-removebg-preview.png">
+                        </a>
+                        <a href="">
+                            <img alt="Link" src="images/pinterest-removebg-preview.png">
+                        </a>
+                    </div>
+                    <p id="currdate"></p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1625363751099!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/fiveday.js"></script>
+  <script src="js/events.js"></script>
+</html>

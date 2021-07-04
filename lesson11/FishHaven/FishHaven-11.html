@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rocky Mountain Weather">
+    <meta name="keywords" content="Weather, Northwest, Idaho, Utah, Montana, Colorado, Nevade, Wyoming">
+    <meta name="author" content="Stockton Cannon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Fish Haven</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div id="logo-wrapper">
+            <a href="../../lesson9.2/index.html"">
+                <img src="images/RMW-logo.png" id="logo" alt="logo">
+            </a>
+        </div>
+        <div id="headertext">
+            <h1>Rocky Mountain Weather</h1>
+            <p>The knowledge of a brighter tomorrow</p>
+        </div>
+    </header>
+    <nav id="home-menu">
+        <ul>
+            <li>
+                <a id="menubutton">
+                    Menu
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson9.2/index.html">
+                    Home
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../preston/preston-11.html">
+                    Preston
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../SodaSprings/SodaSprings-11.html">
+                    Soda Springs
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../FishHaven/FishHaven-11.html" class="active">
+                    Fish Haven
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson8/stormcenter.html">
+                    Storm Center
+                </a>
+            </li>
+            <li class="menuitem hidden">
+                <a href="../../lesson7.2/gallery-7.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pancakeswrapper">
+            <h4 class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h4>
+        </div>
+        <h2>Fish Haven Idaho</h2>
+        <div class="container">
+            <!-- <img src="images/wdd230_image_franklinOriginal.jpeg" alt="preston image"> -->
+            <picture>
+                <source media="(min-width:800px)" srcset="images/large.jpeg">
+                <source media="(min-width:500px)" srcset="images/medium.jpeg">
+                <img src="images/small.jpeg" alt="Preston image">
+              </picture>
+            <div class="text-block">
+                <h3>Weather Summary</h3>
+                <p class="inline">Currently: <span id="weatherDescription"></span></p>
+                <img id="icon">
+                <p>High: <span id="highTemp"></span> °F</p>
+                <p>Current: <span id="temp"></span> °F</p>
+                <p><span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </div>
+        </div>
+        <div id="fivedayforecast">
+            <h3>Five Day Forecast</h3>
+            <div id="fivedays">
+                
+                
+            </div>   
+        </div>
+        <div>
+            <h3>Upcoming Events:</h3>
+            <div id="events">
+
+            </div>
+
+        </div>
+        <div>
+            <h4>Paradise for Residents</h4>
+            <div class="article-container">
+                <div>
+                    <p>
+                        FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.
+                    </p>
+                    <p>
+                        In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.                    </p>
+                    <p>
+                        But they don't live there. It's different living in Fish Haven.                    </p>
+                    <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents">read the full article</a>
+                </div>
+                
+                <img src="images/fishhaven.jpg" alt="Bear River Mountains">
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="footerwrapper">
+                <div class="contactinfowrapper">
+                    <h5>Contact Information</h5>
+                    <div id="email">
+                        <img src="images/emailicon-removebg-preview.png" alt="email icon" id="email-icon">
+                        <p>RockyMountainWeather@email.com</p>
+                    </div>
+                    <div id="phone">
+                        <img src="images/phoneicon-removebg-preview.png" alt="phone icon" id="phone-icon">
+                        <p>(555)-555-5555</p>
+                    </div>
+                    <div id="socialmedia">
+                        <a href="https://www.facebook.com/">
+                            <img alt="Facebook" src="images/facebook-removebg-preview.png">
+                        </a>
+                        <a href="https://twitter.com/?lang=en">
+                            <img alt="Twitter" src="images/twitter-removebg-preview.png">
+                        </a>
+                        <a href="">
+                            <img alt="Link" src="images/whatsapp-removebg-preview.png">
+                        </a>
+                        <a href="">
+                            <img alt="Link" src="images/pinterest-removebg-preview.png">
+                        </a>
+                    </div>
+                    <p id="currdate"></p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505177!2d-111.40486806217935!3d42.03803991735526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1625364608966!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/fiveday.js"></script>
+  <script src="js/events.js"></script>
+</html>
