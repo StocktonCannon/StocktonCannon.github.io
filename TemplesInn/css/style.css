@@ -140,6 +140,12 @@ body {
     margin: 0;
 }
 
+section p {
+  text-align: center;
+  font-family: var(--content-font);
+  
+}
+
 
 
 header nav li {
@@ -156,6 +162,8 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: var(--content-font);
+  font-size: 20px;
 }
 
 #phone img, #email img {
@@ -299,7 +307,12 @@ nav ul {
   }
 
   div.footerwrapper div h5 {
-      font-size: 20px;
+    line-height: .5;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #phone, #email {
+    line-height: .5;
   }
 }
 
@@ -366,6 +379,10 @@ main {
   margin: 10px 20px 0 20px;
 
 }
+
+.bookNow { 
+  font-size: 35px;
+}
 .mapContainer {
   grid-column: 1 / span 1;
   grid-row: 3;
@@ -410,6 +427,11 @@ div.footerwrapper div h5 {
     display: none;
   }
 
+  section p {
+    font-size: 20px;
+    
+}
+
   nav {
     background-color: var(--main-blue);
   }
@@ -425,6 +447,11 @@ div.footerwrapper div h5 {
   nav ul li:hover {
     background-color: var(--blue-background);
   }
+
+  .bookNow { 
+    font-size: 45px;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -462,17 +489,14 @@ section {
   .bookNowContainer {
     grid-column: 1 / span 2;
     grid-row: 2/ 2;
+    margin: 10px 50px 0 50px;
   }
   
   .templeInfo {
     grid-column: 1 / span 1;
     grid-row: 3;
   }
-  
-  .bookNowContainer {
-    margin: 10px 20px 0 20px;
-  
-  }
+
 
   .welcomeMsg {
     grid-column: 2 / span 1;
