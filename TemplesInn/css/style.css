@@ -19,9 +19,16 @@
   height: auto;
 }
 
-.link {
-  font-family: var(--content-font);
+.servicebutton {
   text-align: center;
+  font-family: var(--header-font);
+  font-size: 25px;
+  margin: 0 0 15px 0;
+  width: 100%;
+  background-color: var(--accent-yellow);
+}
+.servicebutton:hover {
+  background-color: var(--main-blue);
 }
 
 .reservation {grid-area: reservation; }
@@ -124,6 +131,12 @@ fieldset.flex {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+.imgcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Caption text */
