@@ -7,7 +7,7 @@
     <meta name="author" content="Stockton Cannon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temples Inn</title>
+    <title>Temples Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,65 +52,88 @@
             </li>
         </ul>
     </nav>
-    <main class="grid">
-    <section class="welcomeMsg">
-        <h2>Welcome to Temple Inn and Suites</h2>
-        <p>
-            We offer incredible free amenities such as our continental breakfast, exercise room, indoor pool, and high speed internet.
-            In addition to these, we offer temple focused amenities, such as our free babysitting service, wedding reception hall, family history center, and temple shuttle.
-            <!-- Here at Temples Inn and Suites we give you the best temporal home for your Eternal Family. -->
-        </p>
-    </section>
+    <main>
 
-    <!-- Slideshow container -->
-    <section class="slideshow-container">
+        <div class="form">
+            <fieldset class="reservation flex">
+                <legend>Reservation Information</legend>
+                <label>Location:<br>
+                <input name="location" type="text" size="16" placeholder="Enter Location" required>
+                </label>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="carImg" src="Images/room.jpg" alt="room">
-            <div class="text">Quality Rooms</div>
+                <label>Start Date:<br>
+                    <input name="date" type="date" required>
+                </label>
+
+                <label>End Date:<br>
+                    <input name="date" type="date" required>
+                </label>
+            
+            </fieldset>
+
+            <fieldset class="personal flex">
+                <legend>Personal Information</legend>
+                <label>Full Name:<br>
+                    <input name="name" type="name" size="20" placeholder="Enter Name" required>
+                </label>
+
+                <label>Email:<br>
+                    <input name="email" type="email" size="20" placeholder="Enter Email">
+                </label>
+
+                <label>Phone Number:<br>
+                    <input name="phone" type="tel" size="20" placeholder="Enter Phone Number" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="credit flex">
+                <legend>Credit Card Information</legend>
+                <label>Card Number:<br>
+                    <input name="credit" type="text" size="16" placeholder="Enter Email">
+                </label>
+
+                <label>Expiration Date:<br>
+                    <input name="date" type="date" size="20" placeholder="Enter Expiration Date">
+                </label>
+
+                <label>Security Code:<br>
+                    <input name="code" type="text" size="16" placeholder="Enter Security Code">
+                </label>
+
+            </fieldset>
+
+            <fieldset class="room flex">
+                <legend>Room Type</legend>
+                <div>
+                    <input type="radio" id="King" name="room" value="King"
+                           checked>
+                    <label for="King">King</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="Queen" name="room" value="Queen">
+                    <label for="Queen">Queen</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="Twin" name="room" value="Twin">
+                    <label for="Twin">Twin</label>
+                  </div>
+                
+            </fieldset>
+
+            <fieldset class="comments flex">
+                <legend>Comments</legend>
+                <textarea placeholder="Enter any additional comments"></textarea>
+                <input id='submit' type="submit"></input>
+            </fieldset>
+
+            
         </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="carImg" src="Images/gym.jpg" alt="gym">
-            <div class="text">Indoor Gyms</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img class="carImg" src="Images/pool.jpg" alt="pool">
-            <div class="text">Outdoor Pools</div>
-        </div>
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </section>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <div class="bookNowContainer">
-        <button class="bookNow">Book Now!</button>
-    </div>
-    <section class="templeInfo">
-        <h3>Temple of the Week</h3>
-        <h3>Idaho Falls</h3>
-        <p>Milestones</p>
-        <p>3 March 1937 - Announced</p>
-        <p>19 December 1939 - Groundbreaking</p>
-        <p>23 September 1945 - Dedicated — dedicatory prayer</p>
-        <p>4 June 2017 - Rededicated — dedicatory prayer</p>
-    </section>
-    <section class="mapContainer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.1050099425715!2d-112.04291438450718!3d43.50014487912678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354595427a86e5b%3A0xcdb2b244bc351af8!2sIdaho%20Falls%20Idaho%20Temple!5e0!3m2!1sen!2sus!4v1626571221721!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+   
+        
+
+
     </main>
 <footer>
     <div class="contactinfowrapper">
@@ -145,7 +168,6 @@
         </div>
     </div>
 </footer>
-<script src="js/carousel.js"></script>
 <script src="js/menu.js"></script>
 </body>
 </html>

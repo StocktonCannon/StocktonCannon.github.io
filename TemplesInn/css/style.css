@@ -7,6 +7,53 @@
     --content-font:  "Open Sans", Arial, Helvetica, sans-serif;
   }
 
+/*Reservations*/
+
+.reservation {grid-area: reservation; }
+.personal {grid-area: personal; }
+.credit {grid-area: credit; }
+.room {grid-area: room; }
+
+.comments {
+    grid-area: comments;
+    width: auto;
+}
+
+.comments textarea {
+    width: 90%;
+    height: 90%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+fieldset {
+  margin: 15px 5px 5px 5px;
+  background-color: var(--blue-background);
+  font-family: var(--content-font);
+  width: 100%;
+  height: 100%;
+}
+
+fieldset.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#submit {
+  font-family:var(--header-font);
+  width: 50%;
+  margin: 10px 0 0 0;
+  background-color: var(--accent-yellow);
+}
+
+#submit:hover {
+  background-color: var(--main-blue);
+}
 /*Img Carousel*/  
 * {box-sizing:border-box}
 
@@ -271,6 +318,15 @@ nav ul {
         
     }
 
+    #bodyOutput section {
+      margin-bottom: 20px;
+    }
+    
+    #bodyOutput section img {
+      width: 100%;
+      height: auto;
+    }
+
     section {
         border: 3px solid black;
         background-color: var(--blue-background);
@@ -321,6 +377,16 @@ nav ul {
     display: none;
   }
 
+  #bodyOutput section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #bodyOutput section img {
+    width: 100%;
+    height: auto;
+  }
+
   nav {
     background-color: var(--main-blue);
   }
@@ -358,7 +424,7 @@ section {
   margin: 10px 10px 0px 10px;
 }
 
-main {
+main.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 1fr 3fr;
@@ -420,6 +486,17 @@ div.footerwrapper div h5 {
 .contactInfoContainer {
   display: flex;
 }
+
+.form {
+  display: grid;
+      grid-template-areas: 
+      'reservation personal'
+      'credit room'
+      'comments comments';
+      align-items: center;
+      grid-gap: 10px;
+
+}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -479,9 +556,24 @@ section {
   background-color: var(--blue-background);
   margin: 10px 10px 0px 10px;
 }
-  main {
-    max-width: 1200px;
-    margin: auto;
+
+#bodyOutput section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#bodyOutput section img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+
+}
+  main.grid {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 1fr 3fr;
@@ -544,5 +636,15 @@ section {
   .contactInfoContainer {
     display: flex;
   }
+
+  .form {
+    display: grid;
+        grid-template-areas: 
+        'reservation personal credit'
+        'room comments comments';
+        align-items: center;
+        grid-gap: 10px;
+
+}
   
 }
